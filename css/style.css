@@ -1,15 +1,28 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Roboto Condensed", Arial, sans-serif;
   color: #505050;
   font-size: 16px;
   line-height: 18px;
+  overflow: scroll;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-weight: normal;
 }
 
 a:focus {
   outline: 2px solid #ffa500;
+}
+
+p {
+  text-indent: 15px;
 }
 
 .visually-hidden {
@@ -25,19 +38,29 @@ a:focus {
 
 .header-nav a {
   color: #cd6e19;
-  font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 22px;
+}
+
+.content-text a {
+  color: #cd6e19;
 }
 
 .header-nav a:hover,
-.header-nav a:focus {
+.header-nav a:focus,
+.content-text a:hover,
+.content-text a:focus {
   color: #ffa500;
 }
 
 .header-nav li {
   color: #cd6e19;
   list-style-type: square;
+}
+
+.header-wrapper {
+  font-size: 14px;
 }
 
 .header-phone {
@@ -60,7 +83,15 @@ a:focus {
 }
 
 .news-list time {
+  font-size: 12px;
+}
+
+.news-list p {
   font-size: 14px;
+}
+
+.content-text h2 {
+  font-size: 18px;
 }
 
 .footer-nav-list a {
@@ -85,21 +116,83 @@ a:focus {
   background-color: #ffb93c;
 }
 
-
 .footer-nav-list li:nth-child(n+4):nth-child(odd) {
   background-color: #cd6e19;
 }
 
 .footer-nav-list li:nth-child(-n+3):nth-child(even) a,
 .footer-nav-list li:nth-child(n+4):nth-child(odd) a {
-  color: #ffffff;
+  color: #dfdfdf;
 }
 .footer-nav-list li:nth-child(-n+3):nth-child(even) a:hover,
 .footer-nav-list li:nth-child(n+4):nth-child(odd) a:hover {
   color: #cacaca;
 }
 
+.hr {
+  border-bottom: 1px solid #cd6e19;
+  width: 100%;
+  margin-bottom: 20px;
+}
 
+.header-wrapper,
+.header-nav,
+.container,
+.footer {
+  width: 960px;
+  margin: 0 auto;
+}
 
+.header-wrapper,
+.container {
+   margin-bottom: 20px;
+}
 
+.header,
+.content {
+  margin-bottom: 30px;
+}
 
+.header {
+  margin-top: 20px;
+}
+
+.content img {
+  margin-bottom: 30px;
+}
+
+.header-wrapper,
+.header-nav-item,
+.content,
+.news-list,
+.footer-nav-list {
+  display: flex;
+}
+
+.header-wrapper,
+.header-nav-item,
+.news-list {
+  justify-content: space-between;
+}
+
+.header-wrapper p {
+  padding-top: 20px;
+  padding-right: 100px;
+}
+
+.news-list li {
+  flex-basis: 300px;
+}
+
+.footer-nav-list {
+  flex-wrap: wrap;
+}
+
+.footer-nav-list li {
+  flex-basis: 280px;
+  padding: 35px 20px;
+}
+
+.content-text ul {
+  margin-left: 40px;
+}
