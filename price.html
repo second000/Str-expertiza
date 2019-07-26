@@ -10,17 +10,18 @@
 </head>
 <body>
 <header class="header">
-  <section class="header-contacts">
-    <p>info@str-expertiza.ru <span class="header-phone">(495) 212-19-60</span></p>
-    <p>115516, г. Москва, ул. Промышленная, д.11. офис 7д</p>
-  </section>
-  <nav class="header-nav">
-    <a href="str-expertiza.ru">
+  <div class="header-wrapper">
+    <a href="#">
       <img src="img/logo.png" alt="Строй-экспертиза" class="header-logo">
     </a>
+    <p class="header-contacts">info@str-expertiza.ru <span class="header-phone">(495) 212-19-60</span><br>
+      115516, г. Москва, ул. Промышленная, д.11. офис 7д</p>
+  </div>
+  <div class="hr"></div>
+  <nav class="header-nav">
     <ul class="header-nav-item">
       <li><a href="company.html">О компании</a></li>
-      <li><a href="#">Стоимость услуг</a></li>
+      <li><a href="price.html">Стоимость услуг</a></li>
       <li><a href="licenses.html">Лицензии</a></li>
       <li><a href="partners.html">Партнеры</a></li>
       <li><a href="contacts.html">Контакты</a></li>
@@ -28,25 +29,26 @@
   </nav>
 </header>
 <main class="container">
-  <section class="main-contents">
-    <h1>Стоимость услуг строительной экспертизы</h1>
-    <img class="main-img">
-    <h2>Стоимость наших услуг (указана стоимости только на некоторые работы, полный перечнь услуг и их стоимость вы можете уточнить по телефону):</h2>
-    <table>
-      <thead>
+  <section class="content">
+    <div class="content-text">
+      <img class="main-img" src="img/content-img.jpg" alt="Фото чертежа">
+      <h1>Стоимость услуг строительной экспертизы</h1>
+      <h2>Стоимость наших услуг (указана стоимости только на некоторые работы, полный перечнь услуг и их стоимость вы
+        можете уточнить по телефону):</h2>
+      <table>
+        <thead>
         <tr>
           <th>Название услуги</th>
           <th>Стоимость (в рублях)</th>
         </tr>
-      </thead>
-      <tbody>
+        </thead>
+        <tbody>
         <tr>
           <td>Выезд эксперта в пределах МКАД</td>
           <td>от 6000</td>
         </tr>
-
         <tr>
-          <td>Участие эксперта в приемке объекта (квартиры или коттеджа) Заказчиком с составлением Акта осмотра</td>
+          <td>Участие эксперта в приемке объекта (квартиры или коттеджа) с составлением Акта осмотра</td>
           <td>от 8000</td>
         </tr>
         <tr>
@@ -99,7 +101,7 @@
         </tr>
         <tr>
           <td>Определение прочности кладочного раствора по образцам, отобранным из конструкции ГОСТ 5802-86</td>
-          <td>1280 за единицу/td>
+          <td>1280 за единицу</td>
         </tr>
         <tr>
           <td>Определение средней плотности бетонной смеси ГОСТ 10181-2000</td>
@@ -121,8 +123,9 @@
           <td>Определение толщины металла ГОСТ 28702-90</td>
           <td>640 за единицу</td>
         </tr>
-      </tbody>
-    </table>
+        </tbody>
+      </table>
+    </div>
   </section>
 </main>
 <footer class="footer">
